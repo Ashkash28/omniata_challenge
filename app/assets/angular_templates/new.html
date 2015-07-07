@@ -1,0 +1,9 @@
+<h1>Add Contacts</h1>
+<div ng-repeat="error in errors">
+	<p class="red">{{error}}</p>
+</div>
+<p class="green">{{success}}</p>
+<p>First Name: <input type="text" ng-model="newContact.firstname"></p>
+<p>Last Name: <input type="text" ng-model="newContact.lastname"></p>
+<button type="button" class="btn btn-success" ng-click="addContact()">Add</button>
+<a href="#/index"><button type="button" class="btn btn-info">Back</button></a>
